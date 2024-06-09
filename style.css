@@ -1,0 +1,1387 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Jersey+10+Charted&family=Press+Start+2P&display=swap');*/
+@font-face {
+    font-family: Vcr;
+    src: url(assets/VCR_OSD_MONO.ttf);
+}
+/*.press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}*/
+.vcr-osd-mono-regular{
+    font-family: Vcr;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Fontes ↑ */
+
+/* Código ↓ */
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 8px;
+    width: 100%;
+    height: 97vh;
+    padding: 5px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    background-color: black;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 94vh;
+    padding: 5px;
+    margin: 0;
+    justify-content: center;
+}
+.right{
+    background-color: black;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 8px;
+    flex-direction: column;
+    display: flex;
+    height: 92.6vh;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-left: 5px;
+    justify-content: space-evenly;
+}
+.tipbox{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    padding: 0; 
+    margin: 0;
+    /*justify-content: space-evenly;*/
+}
+.title{
+    color: white;
+    font-size: 5vw;
+    padding: 0;
+    margin: 0;
+}
+.tip-text{
+    color: white;
+    font-size: 2.6vw;
+    text-align: center;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+.menu1{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    height: 6vw;
+}
+.menu2{
+    color: white;
+    font-size: 2.8vw;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.weapons{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    /*border-radius: 8px;*/
+    height: 12vh;
+    width: 99%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.weapons:hover{
+    text-shadow: 0 0 20px white;
+}
+.enemies{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    /*border-radius: 8px;*/
+    height: 12vh;
+    width: 99%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.enemies:hover{
+    text-shadow: 0 0 20px white;
+}
+.thecybergrind{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    /*border-radius: 8px;*/
+    height: 12vh;
+    width: 99%;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.thecybergrind:hover{
+    text-shadow: 0 0 20px white;
+}
+.sandbox{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    /*border-radius: 8px;*/
+    height: 12vh;
+    width: 99%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.sandbox:hover{
+    text-shadow: 0 0 20px white;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 15vw;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.tiptitle{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 20vh;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.tip{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 75vh;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    
+}
+.options{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    height: 12vh;
+    width: 99%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.options:hover{
+    text-shadow: 0 0 20px white;
+}
+.warning{
+    color: rgb(199, 0, 0);
+    font-size: 2.6vw;
+    text-align: center;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+.enter-the-sandbox{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: rgb(82, 121, 206);
+    border-style: solid;
+    height: 14vh;
+    width: 95%;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 2.6vw;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.enter-the-sandbox:hover{
+    text-shadow: 0 0 20px white;
+    color: rgb(82, 121, 206);
+}
+.sandbox-menu{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 92.6vh;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.tcg-menu{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 92.6vh;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly;
+}
+.enter-the-tcg{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: rgb(199, 0, 0);
+    border-style: solid;
+    /*border-radius: 8px;*/
+    height: 14vh;
+    width: 95%;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 2.6vw;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.enter-the-tcg:hover{
+    text-shadow: 0 0 20px white;
+    color: rgb(199, 0, 0);
+}
+.tcg-text{
+    color: white;
+    font-size: 2.6vw;
+    text-align: center;
+    flex-direction: row;
+    height: 55px;
+    padding: 0;
+    margin: 0;
+}
+.exit{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: red;
+    border-style: solid;
+    border-radius: 8px;
+    height: 12vh;
+    width: 18%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.exit:hover{
+    text-shadow: 0 0 20px white;
+    color: red;
+}
+.themes{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    height: 12vh;
+    width: 99%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.themes:hover{
+    text-shadow: 0 0 20px white;
+}
+.songs{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    height: 12vh;
+    width: 99%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.songs:hover{
+    text-shadow: 0 0 20px white;
+}
+.patterns{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    height: 12vh;
+    width: 99%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.pattenrs:hover{
+    text-shadow: 0 0 20px white;
+}
+.waves{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    /*border-radius: 8px;*/
+    height: 12vh;
+    width: 99%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.waves:hover{
+    text-shadow: 0 0 20px white;
+}
+.return-main{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: red;
+    border-style: solid;
+    height: 12vh;
+    width: 99%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 1.2vw;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.return-main:hover{
+    text-shadow: 0 0 20px white;
+    color: red;
+}
+.tcgtitle{
+    color: white;
+    font-size: 5vw;
+    padding: 0;
+    margin: 0;
+}
+.tcgtext{
+    color: white;
+    font-size: 2.6vw;
+    text-align: center;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+.theme-button{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    height: 12vh;
+    width: 50%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 2.5vw;
+    justify-content: center;
+}
+.theme-button:hover{
+    text-shadow: 0 0 20px white;
+}
+.themebuttondiv{
+    display: flex;
+    flex-direction: column;
+    /*padding: 50px 210px;*/
+    height: 58vh;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.minigame{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: rgb(0, 223, 0);
+    border-style: solid;
+    /*border-radius: 8px;*/
+    height: 12vh;
+    width: 99%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 1.5vw;
+}
+.minigame:hover{
+    text-shadow: 0 0 20px white;
+    color: rgb(0, 223, 0);
+}
+.exit-text{
+    color: white;
+    font-size: 2.6vw;
+    text-align: center;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+.exit-box{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-evenly;*/
+    width: 100%;
+    align-items: center;
+}
+.main-menu-exit{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: rgb(199, 0, 0);
+    border-style: solid;
+    height: 12vh;
+    width: 95%;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 2.6vw;
+    justify-content: center;
+}
+.main-menu-exit:hover{
+    text-shadow: 0 0 20px white;
+    color: rgb(199, 0, 0);
+}
+.exit-box-main{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+}
+.exit-title{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+}
+.exit-title-text{
+    color: white;
+    font-size: 5vw;
+    padding: 0;
+    margin: 0;
+}
+.buttons-left{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly;
+    width: 50%;
+    align-items: center;
+    height: 38vh;
+}
+.buttons-right{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly;
+    width: 50%;
+    align-items: center;
+    height: 38vh;
+}
+.wave-buttons-div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 38vh;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+}
+.wave-text{
+    color: white;
+    font-size: 2.6vw;
+    text-align: center;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+.wavetitle{
+    color: white;
+    font-size: 5vw;
+    padding: 0;
+    margin: 0;
+}
+.wave-title-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+.wave-button{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    height: 10vh;
+    width: 70%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 2.5vw;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.wave-button:hover{
+    text-shadow: 0 0 20px white;
+}
+.mm-exit-div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.timesetday{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    height: 12vh;
+    width: 99%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 1.5vw;
+    justify-content: center;
+}
+.world-options{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    height: 12vh;
+    width: 99%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.icon-packs{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    height: 12vh;
+    width: 99%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.timesetday:hover{
+    text-shadow: 0 0 20px white;
+}
+.world-options:hover{
+    text-shadow: 0 0 20px white;
+}
+.icon-packs:hover{
+    text-shadow: 0 0 20px white;
+}
+.sandbox-title{
+    color: white;
+    font-size: 5vw;
+    padding: 0;
+    margin: 0;
+}
+.sandbox-text-stats{
+    color: white;
+    font-size: 2.6vw;
+    text-align: left;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+.sandbox-title-box{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 20%;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.sandbox-text-box{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    width: 90%;
+    height: 75vh;
+}
+.sandbox-main-title{
+    color: white;
+    font-size: 2.2vw;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.sandbox-main-title-box{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    height: 6vw;
+}
+.top-imgs{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    width: 80%;
+}
+.bottom-imgs{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    width: 80%;
+}
+.construct-images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+}
+.const-img{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    width: 15vw;
+    cursor: pointer;
+}
+.border-button{
+    border: 4px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 8px;
+    display: flex;
+    width: 95%;
+    align-items: center;
+    flex-direction: row;
+    height: 10vh;
+    padding: 5px;
+}
+.world-buttons{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: 58vh;
+}
+.icon-box{
+    display: flex;
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+}
+.border-icon{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 6vw;
+}
+.border-text{
+    display: flex;
+    /*align-items: center;*/
+    width: 80%;
+    flex-direction: column;
+}
+.border-text1{
+    color: white;
+    font-size: 2vw;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+.border-text2{
+    color: rgb(255, 123, 0);
+    font-size: 2vw;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    flex-direction: row;
+}
+.toggle-border{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    height: 10vh;
+    width: 25%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 2vw;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.toggle-border:hover{
+    text-shadow: 0 0 20px white; 
+}
+.icon-packs-options{
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    align-items: center;
+    height: 58vh;
+    justify-content: space-between;
+}
+.hakita{
+    display: flex;
+    border: 8px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: white;
+    width: 20vw;
+    height: 35vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(134, 185, 134);
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+.pitr{
+    display: flex;
+    border: 8px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: white;
+    width: 20vw;
+    height: 35vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(134, 185, 134);
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+.hakita:hover{
+    background-color: rgb(158, 0, 0);
+}
+.pitr:hover{
+    background-color: rgb(158, 0, 0);
+}
+.default-pack{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pitr-pack{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.default-melon{
+    width: 10vw;
+}
+.pitr-melon{
+    width: 10vw;
+}
+.desc{
+    font-size: 2vw;
+}
+.revolver{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    /*border-radius: 8px;*/
+    height: 8vh;
+    width: 99%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+    justify-content: center; 
+}
+.shotgun{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    /*border-radius: 8px;*/
+    height: 8vh;
+    width: 99%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.nailgun{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    /*border-radius: 8px;*/
+    height: 8vh;
+    width: 99%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.railcannon{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    /*border-radius: 8px;*/
+    height: 8vh;
+    width: 99%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.rocketlauncher{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    /*border-radius: 8px;*/
+    height: 8vh;
+    width: 99%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.arms{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    /*border-radius: 8px;*/
+    height: 8vh;
+    width: 99%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.return-left{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: rgb(199, 0, 0);
+    border-style: solid;
+    /*border-radius: 8px;*/
+    height: 8vh;
+    width: 99%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.revolver:hover{
+    text-shadow: 0 0 20px white;
+}
+.shotgun:hover{
+    text-shadow: 0 0 20px white;
+}
+.nailgun:hover{
+    text-shadow: 0 0 20px white;
+}
+.railcannon:hover{
+    text-shadow: 0 0 20px white;
+}
+.rocketlauncher:hover{
+    text-shadow: 0 0 20px white;
+}
+.arms:hover{
+    text-shadow: 0 0 20px white;
+}
+.return-left:hover{
+    text-shadow: 0 0 20px white;
+    color: rgb(199, 0, 0);
+}
+.weaponbox{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 92.6vh;
+    width: 100%;
+    align-items: center;
+    padding: 0; 
+    margin: 0;
+    justify-content: space-evenly;
+}
+.blue-var{
+    border: 4px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 8px;
+    display: flex;
+    width: 97%;
+    align-items: center;
+    flex-direction: row;
+    height: 19vh;
+    padding: 5px;
+    justify-content: space-between;
+}
+.green-var{
+    border: 4px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 8px;
+    display: flex;
+    width: 97%;
+    align-items: center;
+    flex-direction: row;
+    height: 19vh;
+    padding: 5px;
+    justify-content: space-between;
+}
+.red-var{
+    border: 4px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 8px;
+    display: flex;
+    width: 97%;
+    align-items: center;
+    flex-direction: row;
+    height: 19vh;
+    padding: 5px;
+    justify-content: space-between;
+}
+.gold-var{
+    border: 4px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 8px;
+    display: flex;
+    width: 97%;
+    align-items: center;
+    flex-direction: row;
+    height: 19vh;
+    padding: 5px;
+    justify-content: space-evenly;
+}
+.weapon-img{
+    width: 17%;
+    display: flex;
+    margin: 2%;
+}
+.arm-img{
+    width: 10%;
+    display: flex;
+    margin: 2%;
+    image-resolution: 16dpi;
+}
+.blue{
+    filter: invert(53%) sepia(24%) saturate(1772%) hue-rotate(145deg) brightness(99%) contrast(104%);
+    transition-duration: 0.2s;
+}
+.blue:hover{
+    filter: drop-shadow(0px 0px 10px) invert(53%) sepia(24%) saturate(1772%) hue-rotate(145deg) brightness(99%) contrast(104%);
+}
+.red{
+    filter: invert(36%) sepia(93%) saturate(7465%) hue-rotate(355deg) brightness(99%) contrast(119%);
+    transition-duration: 0.2s;
+}
+.red:hover{
+    filter: drop-shadow(0px 0px 10px) invert(36%) sepia(93%) saturate(7465%) hue-rotate(355deg) brightness(99%) contrast(119%);
+}
+.green{
+    filter: invert(63%) sepia(89%) saturate(965%) hue-rotate(77deg) brightness(105%) contrast(117%);
+    transition-duration: 0.2s;
+}
+.green:hover{
+    filter: drop-shadow(0px 0px 10px) invert(63%) sepia(89%) saturate(965%) hue-rotate(77deg) brightness(105%) contrast(117%);
+}
+.gold{
+    filter: invert(21%) sepia(78%) saturate(5607%) hue-rotate(354deg) brightness(106%) contrast(126%);
+    transition-duration: 0.2s;
+}
+.gold:hover{
+    filter: drop-shadow(0px 0px 10px) invert(21%) sepia(78%) saturate(5607%) hue-rotate(354deg) brightness(106%) contrast(126%);
+}
+.piercer-text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 35%;
+}
+.piercer1{
+    color: white;
+    font-size: 3vw;
+    flex-direction: row;
+    padding: 2%;
+    margin: 0;
+}
+.piercer2{
+    color: white;
+    font-size: 2.6vw;
+    flex-direction: row;
+    padding: 2%;
+    margin: 0;
+}
+.equip-img{
+    display: flex;
+    width: 15vw;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+}
+.equip-box{
+    display: flex;
+    width: 75%;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 4px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 9vh;
+}
+.alternate-text{
+    color: rgb(255, 123, 0);
+    font-size: 2.8vw;
+    padding: 0;
+    margin: 0;
+    transition-duration: 0.2s;
+}
+.alternate-text:hover{
+    text-shadow: 0 0 20px rgb(255, 123, 0);
+}
+.equip-text{
+    color: white;
+    font-size: 2.8vw;
+    padding: 0;
+    margin: 0;
+    transition-duration: 0.2s;
+}
+.equip-text:hover{
+    text-shadow: 0 0 20px white;
+}
+.unequip-text{
+    color: rgb(100, 100, 100);
+    font-size: 2.8vw;
+    padding: 0;
+    margin: 0;
+    transition-duration: 0.2s;
+}
+.unequip:hover{
+    text-shadow: 0 0 20px rgb(100, 100, 100);
+}
+.equip-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9vw;
+    height: 6vh;
+    border: 4px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    font-size: 2.5vw;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.equip-left:hover{
+    text-shadow: 0 0 20px white;
+}
+.equip-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9vw;
+    height: 6vh;
+    border: 4px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    font-size: 2.5vw;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.equip-right:hover{
+    text-shadow: 0 0 20px white;
+}
+.order-up{
+    display: flex;
+    align-items: center;
+    width: 4vw;
+    height: 5vh;
+    border: 4px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    font-size: 1.3vw;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.order-up:hover{
+    text-shadow: 0 0 20px white;
+}
+.order-down{
+    display: flex;
+    align-items: center;
+    width: 4vw;
+    height: 5vh;
+    border: 4px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    font-size: 1.3vw;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.order-down:hover{
+    text-shadow: 0 0 20px white;
+}
+.number-display{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 3.5vw;
+    height: 5vh;
+    border: 4px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    font-size: 2vw;
+    flex-direction: column;
+    margin: 0;
+    justify-content: center;
+}
+.order-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 10%;
+    height: 19vh;
+    text-align: center;
+}
+.equip-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 78%;
+}
+.equip-buttons-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 30%;
+    height: 19vh;
+}
+.weapon-info{
+    display: flex;
+    width: 49%;
+    height: 17vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    border: 4px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.weapon-color{
+    display: flex;
+    width: 49%;
+    height: 17vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    border: 4px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.weapon-info:hover{
+    text-shadow: 0 0 20px white;
+}
+.weapon-color:hover{
+    text-shadow: 0 0 20px white;
+}
