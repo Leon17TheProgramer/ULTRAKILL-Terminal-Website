@@ -850,14 +850,14 @@ function creditsscreen(){
         <div class="the-images">
         <div class="hakita-pfp">
             <div class="hakita-pfp-box">
-                <img class="hakita-image" src="assets/Sprite/HakitaIcon.png" alt="Hakita">
+                <img class="hakita-image" src="assets/icons/HakitaIcon.png" alt="Hakita">
             </div>
             <p class="desc">Hakita, Creator of Ultrakill</p>
         </div>
         
         <div class="l17-pfp">
             <div class="l17-pfp-box">
-                <img class="l17-image" src="assets/Sprite/L17Icon.png" alt="Leon17">
+                <img class="l17-image" src="assets/icons/L17Icon.png" alt="Leon17">
             </div>
             
             <p class="desc">Leon17, A random fan</p>
