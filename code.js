@@ -117,7 +117,38 @@ function sandboxmenu(){
 }
 function optionsmenu(){
     let rightBox = document.getElementById("right-box");
-    //rightBox.innerHTML =
+    let leftBox = document.getElementById("left-box");
+    leftBox.innerHTML = `<div class="menu1">
+        <p class="menu2">--OPTIONS--</p>
+    </div>
+                    
+    <div class="buttons">
+        <button id="general"class="general vcr-osd-mono-regular" onclick="generalmenu()">
+            GENERAL
+        </button>
+        <button id="controls" class="controls vcr-osd-mono-regular" onclick="controlsmenu()">
+            CONTROLS
+        </button>
+        <button id="graphics" class="graphics vcr-osd-mono-regular" onclick="graphicsmenu()">
+            GRAPHICS
+        </button>
+        <button id="audio" class="audio vcr-osd-mono-regular" onclick="GODDAMNTHEAUDIO()">
+            AUDIO
+        </button>
+        <button id="credits" class="credits vcr-osd-mono-regular" onclick="creditsscreen()">
+            CREDITS
+        </button>
+        <button id="back" class="return-main vcr-osd-mono-regular" onclick="areyousure()">
+            RETURN TO MISSION
+        </button>
+    </div>`
+    rightBox.innerHTML = `<div class="tipbox">
+    <div class="tiptitle">
+        <p class="title">--OPTIONS--</p>
+    </div>
+    <div class="tip">
+        <p class="tip-text">[[PLACEHOLDER]]</p>
+    </div>`
 }
 function tcgsettings(){
     let rightBox = document.getElementById("right-box");
