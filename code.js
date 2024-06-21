@@ -847,7 +847,6 @@ function creditsscreen(){
         <p class="title">--CREDITS--</p>
     </div>
     <div class="icon-packs-options">
-        <div class="the-images">
         <div class="default-pack">
             <div class="hakita-pfp-box">
                 <img class="hakita-image" src="assets/icons/HakitaIcon.png" alt="Hakita">
