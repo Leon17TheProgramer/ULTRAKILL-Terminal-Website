@@ -851,7 +851,7 @@ function creditsscreen(){
             <div class="hakita-pfp-box">
                 <img class="hakita-image" src="assets/icons/HakitaIcon.png" alt="Hakita">
             </div>
-            <p class="desc">Hakita, Creator of Ultrakill</p>
+            <p class="desc">Hakita, Creator of<br>Ultrakill</p>
         </div>
         
         <div class="pitr-pack">
