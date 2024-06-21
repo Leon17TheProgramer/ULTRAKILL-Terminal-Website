@@ -1510,3 +1510,11 @@ body{
 .l17-image:hover{
     width: 25vw;
 }
+.options-text{
+    color: white;
+    font-size: 2.2vw;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}

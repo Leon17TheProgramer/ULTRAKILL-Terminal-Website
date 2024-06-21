@@ -119,7 +119,7 @@ function optionsmenu(){
     let rightBox = document.getElementById("right-box");
     let leftBox = document.getElementById("left-box");
     leftBox.innerHTML = `<div class="menu1">
-        <p class="menu2">--OPTIONS--</p>
+        <p class="options-text">--OPTIONS--</p>
     </div>
                     
     <div class="buttons">
