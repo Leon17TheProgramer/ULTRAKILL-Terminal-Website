@@ -148,8 +148,8 @@ function optionsmenu(){
     </div>
     <div class="tip">
         <p class="tip-text">This is the Options menu.</p>
-        <p class="tip-text">Here you can mess around with settings such as<br><span style="color: rgb(255, 123, 0)">Controls</span>,<span style="color: rgb(255, 123, 0)">Graphics</span>, <span style="color: rgb(255, 123, 0)">Audio</span> and <span style="color: rgb(255, 123, 0)">General Settings</span>.</p>
-        <p class="tip-text">You can also find the Credits of the <span style="color: rgb(255, 123, 0)">Inspiration</span> of<br>this Project, as well as the Creator.</p>
+        <p class="tip-text">Here you can mess around with settings such as<br><span style="color: rgb(255, 123, 0)">Controls</span>, <span style="color: rgb(255, 123, 0)">Graphics</span>, <span style="color: rgb(255, 123, 0)">Audio</span> and <span style="color: rgb(255, 123, 0)">General Settings</span>.</p>
+        <p class="tip-text">You can also find the Credits of the <span style="color: rgb(255, 123, 0)">Inspiration</span> of<br>this Project, aswell as the Creator.</p>
     </div>
 </div>`
 }
@@ -853,7 +853,7 @@ function creditsscreen(){
             <div class="hakita-pfp-box">
                 <img class="hakita-image" src="assets/icons/HakitaIcon.png" alt="Hakita">
             </div>
-            <p class="desc">Hakita, Creator of<br>Ultrakill</p>
+            <p class="desc"><span style="color: rgb(179, 232, 127)">Hakita</span><br>Creator of <span style="color: rgb(180, 12, 12)">Ultrakill</span></p>
         </div>
         
         <div class="pitr-pack">
@@ -861,7 +861,7 @@ function creditsscreen(){
                 <img class="l17-image" src="assets/icons/L17Icon.png" alt="Leon17">
             </div>
             
-            <p class="desc">Leon17, A random fan</p>
+            <p class="desc"><span style="color: rgb(255, 123, 0)">Leon17</span><br>A random fan</p>
         </div>
     </div>
     <button class="exit vcr-osd-mono-regular" onclick="optionsmenu()">CLOSE</button>
