@@ -1498,9 +1498,11 @@ body{
 }
 .hakita-image{
     width: 20vw;
+    transition-duration: 0.2s;
 }
 .l17-image{
     width: 20vw;
+    transition-duration: 0.2s;
 }
 .hakita-image:hover{
     width: 25vw;
