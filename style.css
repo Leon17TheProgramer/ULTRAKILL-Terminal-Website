@@ -1502,3 +1502,9 @@ body{
 .l17-image{
     width: 20vw;
 }
+.hakita-image:hover{
+    width: 25vw;
+}
+.l17-image:hover{
+    width: 25vw;
+}
