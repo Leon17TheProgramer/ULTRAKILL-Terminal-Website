@@ -148,7 +148,7 @@ function optionsmenu(){
     </div>
     <div class="tip">
         <p class="tip-text">This is the Options menu.</p>
-        <p class="tip-text">Here you can mess around with settings such as <span style="color: rgb(255, 123, 0)">Controls</span>,<br><span style="color: rgb(255, 123, 0)">Graphics</span>, <span style="color: rgb(255, 123, 0)">Audio</span> and <span style="color: rgb(255, 123, 0)">General Settings</span>.</p>
+        <p class="tip-text">Here you can mess around with settings such as<br><span style="color: rgb(255, 123, 0)">Controls</span>,<span style="color: rgb(255, 123, 0)">Graphics</span>, <span style="color: rgb(255, 123, 0)">Audio</span> and <span style="color: rgb(255, 123, 0)">General Settings</span>.</p>
         <p class="tip-text">You can also find the Credits of the <span style="color: rgb(255, 123, 0)">Inspiration</span> of<br>this Project, as well as the Creator.</p>
     </div>
 </div>`
