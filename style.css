@@ -1385,3 +1385,120 @@ body{
 .weapon-color:hover{
     text-shadow: 0 0 20px white;
 }
+.general{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    /*border-radius: 8px;*/
+    height: 12vh;
+    width: 99%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.general:hover{
+    text-shadow: 0 0 20px white;
+}
+.controls{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    /*border-radius: 8px;*/
+    height: 12vh;
+    width: 99%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.controls:hover{
+    text-shadow: 0 0 20px white;
+}
+.graphics{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    /*border-radius: 8px;*/
+    height: 12vh;
+    width: 99%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.graphics:hover{
+    text-shadow: 0 0 20px white;
+}
+.audio{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    /*border-radius: 8px;*/
+    height: 12vh;
+    width: 99%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.audio:hover{
+    text-shadow: 0 0 20px white;
+}
+.credits{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    /*border-radius: 8px;*/
+    height: 12vh;
+    width: 99%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.credits:hover{
+    text-shadow: 0 0 20px white;
+}
+.hakita-pfp-box{
+    display: flex;
+    width: 20vw;
+    height: 35vh;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.2s;
+}
+.l17-pfp-box{
+    display: flex;
+    width: 20vw;
+    height: 35vh;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.2s;
+}
+.hakita-image{
+    width: 10vw;
+}
+.l17-image{
+    width: 10vw;
+}
