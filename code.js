@@ -867,3 +867,169 @@ function creditsscreen(){
     <button class="exit vcr-osd-mono-regular" onclick="optionsmenu()">CLOSE</button>
 </div>`
 }
+function generalmenu(){
+    let rightBox = document.getElementById("right-box");
+    rightBox.innerHTML = `<div class="tipbox">
+    <div class="tiptitle">
+        <p class="title">--GENERAL--</p>
+    </div>
+    <div class="overflow-buttons">
+        <div class="mini-tiptitle">
+            <p class="mini-title">-- WEAPONS --</p>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="border-text">
+                <p class="border-text1">REMEMBER LAST USED WEAPON VARIATION</p>
+            </div>
+            <button class="x-button vcr-osd-mono-regular" onclick="">x</button>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="border-text">
+                <p class="border-text1">WEAPON POSITION</p>
+            </div>
+            <button class="toggle-border vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+
+        <div class="mini-tiptitle">
+            <p class="mini-title">-- SCREEN --</p>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="border-text">
+                <p class="border-text1">SCREENSHAKE</p>
+            </div>
+            <div class="slidershake">
+                <input id="range" type="range" min="0" max="200" value="100" class="slider" oninput="progressScript()">
+                
+            </div>
+            <div class="percent-value-box">
+                <p id="value" class="percent-value">100</p><p class="percent-value">%</p>
+            </div>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="border-text">
+                <p class="border-text1">PARRY SCREEN FLASH</p>
+            </div>
+            <button class="toggle-border vcr-osd-mono-regular" onclick="">x</button>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="border-text">
+                <p class="border-text1">CAMERA TILT</p>
+            </div>
+            <button class="toggle-border vcr-osd-mono-regular" onclick="">x</button>
+        </div>
+
+        <div class="mini-tiptitle">
+            <p class="mini-title">-- MISC --</p>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="border-text">
+                <p class="border-text1">SEASONAL EVENTS</p>
+            </div>
+            <button class="toggle-border vcr-osd-mono-regular" onclick="">x</button>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="border-text">
+                <p class="border-text1">LEVEL LEADERBOARDS</p>
+            </div>
+            <button class="toggle-border vcr-osd-mono-regular" onclick="">x</button>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="border-text">
+                <p class="border-text1">MISSION RESTART/QUIT WARNING</p>
+            </div>
+            <button class="toggle-border vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="border-text">
+                <p class="border-text1">SANDBOX SAVE OVERWRITE WARNING</p>
+            </div>
+            <button class="toggle-border vcr-osd-mono-regular" onclick="">x</button>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="border-text">
+                <p class="border-text1">DISCORD INTEGRATION</p>
+            </div>
+            <button class="toggle-border vcr-osd-mono-regular" onclick="">x</button>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="border-text">
+                <p class="border-text1">ADVANCED OPTIONS</p>
+            </div>
+            <button class="toggle-border vcr-osd-mono-regular" onclick="advancedmenu()">OPEN</button>
+        </div>
+    </div>
+    <button class="exit vcr-osd-mono-regular" onclick="optionsmenu()">BACK</button>
+</div>`
+}
+//rangeValue.innerText = this.value, 
+function advancedmenu(){
+    let rightBox = document.getElementById("right-box");
+    rightBox.innerHTML = `<div class="tipbox">
+    <div class="tiptitle">
+        <p class="title">--ADVANCED OPTIONS--</p>
+    </div>
+    <div class="overflow-buttons-left">
+        <div class="mini-tiptitle-adv">
+            <p class="mini-title-adv">CYBER GRIND</p>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="border-text">
+                <p class="border-text1">LOCAL HIGH SCORES</p>
+            </div>
+            <button class="toggle-border vcr-osd-mono-regular" onclick="">RESET</button>
+        </div>
+
+        <div class="mini-tiptitle-adv">
+            <p class="mini-title-adv">LEVEL 5-2</p>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="border-text">
+                <p class="border-text1">DISABLE WATER SCROLLING</p>
+            </div>
+            <button class="toggle-border vcr-osd-mono-regular" onclick="">x</button>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="border-text">
+                <p class="border-text1">DISABLE WATER WAVES</p>
+            </div>
+            <button class="toggle-border vcr-osd-mono-regular" onclick="">x</button>
+        </div>
+
+        <div class="mini-tiptitle-adv">
+            <p class="mini-title-adv">LEVEL 7-1</p>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="border-text">
+                <p class="border-text1">REMAIN ALWAYS DARK</p>
+            </div>
+            <button class="toggle-border vcr-osd-mono-regular" onclick="">x</button>
+        </div>
+        
+        <div class="mini-tiptitle-adv">
+            <p class="mini-title-adv">LEVEL 7-3</p>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="border-text">
+                <p class="border-text1">DISABLE GRASS</p>
+            </div>
+            <button class="toggle-border vcr-osd-mono-regular" onclick="">x</button>
+        </div>
+
+        <div class="mini-tiptitle-adv">
+            <p class="mini-title-adv">LEVEL 7-S</p>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="border-text">
+                <p class="border-text1">REQUIRE HIGH ACCURACY</p>
+            </div>
+            <button class="toggle-border vcr-osd-mono-regular" onclick="">x</button>
+        </div>
+    </div>
+    <button class="exit vcr-osd-mono-regular" onclick="generalmenu()">BACK</button>
+</div>`
+}
+function progressScript(){
+    const sliderEl = document.querySelector("#range");
+    const sliderValue = document.querySelector("#value");
+    
+}
