@@ -1545,7 +1545,7 @@ body{
     height: 10vh;
     padding: 7px;
     margin-bottom: 10px;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 /* Track */
 ::-webkit-scrollbar-track{
@@ -1591,6 +1591,7 @@ body{
     text-align: center;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 .mini-title{
     display: flex;
@@ -1628,22 +1629,22 @@ body{
     appearance: none; /* removes browser-specific styling */
     width: 20vw; /* width of slider */
     height: 1vh; /* height of slider */
-    background: white ; /* orange background */
+    background: black ; /* orange background */
     outline: none; /* remove outline */
     border-radius: 12px; /* round corners */
-
+    cursor: pointer;
 }
-.percent-value-box{
+.percent-value{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 5%;
+    width: 15%;
 }
 .slider::-webkit-slider-thumb {
     appearance: none; /* removes browser-specific styling */
-    width: 1.5vw;
-    height: 2.5vh;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background: #FFFFFF;
     cursor: pointer;
@@ -1657,6 +1658,54 @@ body{
 .slider:active::-webkit-slider-thumb {
     box-shadow: 0 0 15px 13px rgba(255, 255, 255, 0.7)
 }
-.slider:focus::-webkit-slider-thumb {
-    box-shadow: 0 0 15px 13px rgba(255, 255, 255, 0.7)
+.options-desc-text{
+    color: white;
+    font-size: 2vw;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}
+.options-buttons{
+    color: white;
+    background-color: black;
+    border: 4px;
+    border-color: white;
+    border-style: solid;
+    height: 10vh;
+    width: 25%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 2vw;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.options-text-box{
+    display: flex;
+    /*align-items: center;*/
+    /*width: 80%;*/
+    flex-direction: column;
+}
+.x-button-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+}
+.mini-title-desc{
+    display: flex;
+    text-align: center;
+    font-size: 2.5vw;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 7vh;
+}
+.mini-title-psx{
+    display: flex;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 5vh;
 }

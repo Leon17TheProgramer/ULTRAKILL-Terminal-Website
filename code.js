@@ -878,84 +878,95 @@ function generalmenu(){
             <p class="mini-title">-- WEAPONS --</p>
         </div>
         <div id="toggle-weapon-variation" class="general-options-button">
-            <div class="border-text">
-                <p class="border-text1">REMEMBER LAST USED WEAPON VARIATION</p>
+            <div class="options-text-box">
+                <p class="options-desc-text">REMEMBER LAST USED WEAPON VARIATION</p>
             </div>
-            <button class="x-button vcr-osd-mono-regular" onclick="">x</button>
+            <div class="x-button-box">
+                <button class="x-button vcr-osd-mono-regular" onclick="">x</button>
+            </div>
         </div>
         <div id="toggle-weapon-position" class="general-options-button">
-            <div class="border-text">
-                <p class="border-text1">WEAPON POSITION</p>
+            <div class="options-text-box">
+                <p class="options-desc-text">WEAPON POSITION</p>
             </div>
-            <button class="toggle-border vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
         </div>
 
         <div class="mini-tiptitle">
             <p class="mini-title">-- SCREEN --</p>
         </div>
         <div id="toggle-weapon-variation" class="general-options-button">
-            <div class="border-text">
-                <p class="border-text1">SCREENSHAKE</p>
+            <div class="options-text-box">
+                <p class="options-desc-text">SCREENSHAKE</p>
             </div>
             <div class="slidershake">
-                <input id="range" type="range" min="0" max="200" value="100" class="slider" oninput="progressScript()">
-                
-            </div>
-            <div class="percent-value-box">
-                <p id="value" class="percent-value">100</p><p class="percent-value">%</p>
+                <input id="myRange" type="range" min="0" max="200" value="100" class="slider">
+                <p class="percent-value"><span id="demo">100</span>%</p>
             </div>
         </div>
         <div id="toggle-weapon-position" class="general-options-button">
-            <div class="border-text">
-                <p class="border-text1">PARRY SCREEN FLASH</p>
+            <div class="options-text-box">
+                <p class="options-desc-text">PARRY SCREEN FLASH</p>
             </div>
-            <button class="toggle-border vcr-osd-mono-regular" onclick="">x</button>
+            <div class="x-button-box">
+                <button class="x-button vcr-osd-mono-regular" onclick="">x</button>
+            </div>
         </div>
         <div id="toggle-weapon-position" class="general-options-button">
-            <div class="border-text">
-                <p class="border-text1">CAMERA TILT</p>
+            <div class="options-text-box">
+                <p class="options-desc-text">CAMERA TILT</p>
             </div>
-            <button class="toggle-border vcr-osd-mono-regular" onclick="">x</button>
+            <div class="x-button-box">
+                <button class="x-button vcr-osd-mono-regular" onclick="">x</button>
+            </div>
         </div>
 
         <div class="mini-tiptitle">
             <p class="mini-title">-- MISC --</p>
         </div>
         <div id="toggle-weapon-variation" class="general-options-button">
-            <div class="border-text">
-                <p class="border-text1">SEASONAL EVENTS</p>
+            <div class="options-text-box">
+                <p class="options-desc-text">SEASONAL EVENTS</p>
             </div>
-            <button class="toggle-border vcr-osd-mono-regular" onclick="">x</button>
+            <div class="x-button-box">
+                <button class="x-button vcr-osd-mono-regular" onclick="">x</button>
+            </div>
         </div>
         <div id="toggle-weapon-position" class="general-options-button">
-            <div class="border-text">
-                <p class="border-text1">LEVEL LEADERBOARDS</p>
+            <div class="options-text-box">
+                <p class="options-desc-text">LEVEL LEADERBOARDS</p>
             </div>
-            <button class="toggle-border vcr-osd-mono-regular" onclick="">x</button>
+            <div class="x-button-box">
+                <button class="x-button vcr-osd-mono-regular" onclick="">x</button>
+            </div>
         </div>
         <div id="toggle-weapon-position" class="general-options-button">
-            <div class="border-text">
-                <p class="border-text1">MISSION RESTART/QUIT WARNING</p>
+            <div class="options-text-box">
+                <p class="options-desc-text">MISSION RESTART/QUIT WARNING</p>
             </div>
-            <button class="toggle-border vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
         </div>
         <div id="toggle-weapon-variation" class="general-options-button">
-            <div class="border-text">
-                <p class="border-text1">SANDBOX SAVE OVERWRITE WARNING</p>
+            <div class="options-text-box">
+                <p class="options-desc-text">SANDBOX SAVE OVERWRITE WARNING</p>
             </div>
-            <button class="toggle-border vcr-osd-mono-regular" onclick="">x</button>
+            <div class="x-button-box">
+                <button class="x-button vcr-osd-mono-regular" onclick="">x</button>
+            </div>
         </div>
         <div id="toggle-weapon-variation" class="general-options-button">
-            <div class="border-text">
-                <p class="border-text1">DISCORD INTEGRATION</p>
+            <div class="options-text-box">
+                <p class="options-desc-text">DISCORD INTEGRATION</p>
             </div>
-            <button class="toggle-border vcr-osd-mono-regular" onclick="">x</button>
+            <div class="x-button-box">
+                <button class="x-button vcr-osd-mono-regular" onclick="">x</button>
+            </div>
         </div>
         <div id="toggle-weapon-position" class="general-options-button">
-            <div class="border-text">
-                <p class="border-text1">ADVANCED OPTIONS</p>
+            <div class="options-text-box">
+                <p class="options-desc-text">ADVANCED OPTIONS</p>
             </div>
-            <button class="toggle-border vcr-osd-mono-regular" onclick="advancedmenu()">OPEN</button>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="advancedmenu()">OPEN</button>
         </div>
     </div>
     <button class="exit vcr-osd-mono-regular" onclick="optionsmenu()">BACK</button>
@@ -973,63 +984,623 @@ function advancedmenu(){
             <p class="mini-title-adv">CYBER GRIND</p>
         </div>
         <div id="toggle-weapon-variation" class="general-options-button">
-            <div class="border-text">
-                <p class="border-text1">LOCAL HIGH SCORES</p>
+            <div class="options-text-box">
+                <p class="options-desc-text">LOCAL HIGH SCORES</p>
             </div>
-            <button class="toggle-border vcr-osd-mono-regular" onclick="">RESET</button>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">RESET</button>
         </div>
 
         <div class="mini-tiptitle-adv">
             <p class="mini-title-adv">LEVEL 5-2</p>
         </div>
         <div id="toggle-weapon-variation" class="general-options-button">
-            <div class="border-text">
-                <p class="border-text1">DISABLE WATER SCROLLING</p>
+            <div class="options-text-box">
+                <p class="options-desc-text">DISABLE WATER SCROLLING</p>
             </div>
-            <button class="toggle-border vcr-osd-mono-regular" onclick="">x</button>
+            <div class="x-button-box">
+                <button class="x-button vcr-osd-mono-regular" onclick="">x</button>
+            </div>
         </div>
         <div id="toggle-weapon-variation" class="general-options-button">
-            <div class="border-text">
-                <p class="border-text1">DISABLE WATER WAVES</p>
+            <div class="options-text-box">
+                <p class="options-desc-text">DISABLE WATER WAVES</p>
             </div>
-            <button class="toggle-border vcr-osd-mono-regular" onclick="">x</button>
+            <div class="x-button-box">
+                <button class="x-button vcr-osd-mono-regular" onclick="">x</button>
+            </div>
         </div>
 
         <div class="mini-tiptitle-adv">
             <p class="mini-title-adv">LEVEL 7-1</p>
         </div>
         <div id="toggle-weapon-variation" class="general-options-button">
-            <div class="border-text">
-                <p class="border-text1">REMAIN ALWAYS DARK</p>
+            <div class="options-text-box">
+                <p class="options-desc-text">REMAIN ALWAYS DARK</p>
             </div>
-            <button class="toggle-border vcr-osd-mono-regular" onclick="">x</button>
+            <div class="x-button-box">
+                <button class="x-button vcr-osd-mono-regular" onclick="">x</button>
+            </div>
         </div>
         
         <div class="mini-tiptitle-adv">
             <p class="mini-title-adv">LEVEL 7-3</p>
         </div>
         <div id="toggle-weapon-variation" class="general-options-button">
-            <div class="border-text">
-                <p class="border-text1">DISABLE GRASS</p>
+            <div class="options-text-box">
+                <p class="options-desc-text">DISABLE GRASS</p>
             </div>
-            <button class="toggle-border vcr-osd-mono-regular" onclick="">x</button>
+            <div class="x-button-box">
+                <button class="x-button vcr-osd-mono-regular" onclick="">x</button>
+            </div>
         </div>
 
         <div class="mini-tiptitle-adv">
             <p class="mini-title-adv">LEVEL 7-S</p>
         </div>
         <div id="toggle-weapon-variation" class="general-options-button">
-            <div class="border-text">
-                <p class="border-text1">REQUIRE HIGH ACCURACY</p>
+            <div class="options-text-box">
+                <p class="options-desc-text">REQUIRE HIGH ACCURACY</p>
             </div>
-            <button class="toggle-border vcr-osd-mono-regular" onclick="">x</button>
+            <div class="x-button-box">
+                <button class="x-button vcr-osd-mono-regular" onclick="">x</button>
+            </div>
         </div>
     </div>
     <button class="exit vcr-osd-mono-regular" onclick="generalmenu()">BACK</button>
 </div>`
 }
-function progressScript(){
-    const sliderEl = document.querySelector("#range");
-    const sliderValue = document.querySelector("#value");
-    
+function controlsmenu(){
+    let rightBox = document.getElementById("right-box");
+    rightBox.innerHTML = `<div class="tipbox">
+    <div class="tiptitle">
+        <p class="title">--CONTROLS--</p>
+    </div>
+    <div class="overflow-buttons">
+        <div class="mini-tiptitle">
+            <p class="mini-title">-- GENERAL --</p>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">LOOK SENSITIVITY</p>
+            </div>
+            <div class="slidershake">
+                <input id="range" type="range" min="0" max="100" value="50" class="slider">
+                <p class="percent-value"><span id="demo">50</span></p>
+            </div>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">INVERT X AXIS</p>
+            </div>
+            <div class="x-button-box">
+                <button class="x-button vcr-osd-mono-regular" onclick="">x</button>
+            </div>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">INVERT Y AXIS</p>
+            </div>
+            <div class="x-button-box">
+                <button class="x-button vcr-osd-mono-regular" onclick="">x</button>
+            </div>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">CONTROLER RUMBLE</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="rumblemenu()">CUSTOMIZE</button>
+        </div>
+
+        <div class="mini-tiptitle">
+            <p class="mini-title">-- WEAPONS --</p>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">SCROLL WEAPONS WITH MOUSE WHEEL</p>
+            </div>
+            <div class="x-button-box">
+                <button class="x-button vcr-osd-mono-regular" onclick="">x</button>
+            </div>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">WEAPON SCROLL TYPE</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">REVERSE SCROLL DIRECTION</p>
+            </div>
+            <div class="x-button-box">
+                <button class="x-button vcr-osd-mono-regular" onclick="">x</button>
+            </div>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">ON SWAP TO ALREADY<br>DRAWN WEAPON</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+
+        <div class="mini-tiptitle">
+            <p class="mini-title">-- BINDINGS --</p>
+        </div>
+
+        <div class="mini-tiptitle">
+            <p class="mini-title">-- MOVEMENT --</p>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">MOVE</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">DODGE</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">SLIDE</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">JUMP</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+
+        <div class="mini-tiptitle">
+            <p class="mini-title">-- WEAPON --</p>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">PRIMARY FIRE</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">SECONDARY FIRE</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">NEXT VARIATION</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">PREVIOUS<br>VARIATION</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">REVOLVER</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">SHOTGUN</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">NAILGUN</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">RAILCANNON</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">ROCKET<br>LAUNCHER</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">SPAWNER ARM // SPECIAL</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">NEXT WEAPON</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">PREVIOUS<br>WEAPON</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">LAST USED<br>WEAPON</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">VARIATION SLOT<br>1</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">VARIATION SLOT<br>2</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">VARIATION SLOT<br>3</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+
+        <div class="mini-tiptitle">
+            <p class="mini-title">-- FIST --</p>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">PUNCH</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">CHANGE FIST</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">PUNCH<br>(FEEDBACKER)</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">PUNCH<br>(KNUCKLEBLASTER)</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">HOOK</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+
+        <div class="mini-tiptitle">
+            <p class="mini-title">-- HUD --</p>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">STATS</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+    </div>
+    <button class="exit vcr-osd-mono-regular" onclick="optionsmenu()">BACK</button>
+</div>`
 }
+function rumblemenu(){
+    let rightBox = document.getElementById("right-box");
+    rightBox.innerHTML = `<div class="tipbox">
+    <div class="tiptitle">
+        <p class="title">Rumble Customization</p>
+    </div>
+    <div class="overflow-buttons-left">
+        <div class="mini-tiptitle">
+            <p class="mini-title-psx">[[PLACEHOLDER]]</p>
+            <p class="mini-title-desc">(Though wont do anything :/ )</p>
+        </div>
+    </div>
+    <button class="exit vcr-osd-mono-regular" onclick="controlsmenu()">BACK</button>
+</div>`
+}
+function graphicsmenu(){
+    let rightBox = document.getElementById("right-box");
+    rightBox.innerHTML = `<div class="tipbox">
+    <div class="tiptitle">
+        <p class="title">--GRAPHICS--</p>
+    </div>
+    <div class="overflow-buttons">
+        <div class="mini-tiptitle">
+            <p class="mini-title">-- GENERAL --</p>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">RESOLUTION</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">FULLSCREEN</p>
+            </div>
+            <div class="x-button-box">
+                <button class="x-button vcr-osd-mono-regular" onclick="">x</button>
+            </div>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">TARGET FRAMERATE</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">VSYNC</p>
+            </div>
+            <div class="x-button-box">
+                <button class="x-button vcr-osd-mono-regular" onclick="">x</button>
+            </div>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">FIELD OF VIEW</p>
+            </div>
+            <div class="slidershake">
+                <input id="myRange" type="range" min="45" max="160" value="105" class="slider">
+                <p class="percent-value"><span id="demo">105</span></p>
+            </div>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">GAMMA<br>(BRIGHTNESS) (sorta)</p>
+            </div>
+            <div class="slidershake">
+                <input id="myRange" type="range" min="0" max="20" value="10" class="slider">
+                <p class="percent-value"><span id="demo">1.0</span></p>
+            </div>
+        </div>
+
+        <div class="mini-tiptitle">
+            <p class="mini-title-psx">-- PSX --</p>
+            <p class="mini-title-desc">(Tone down for more visual clarity)</p>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">TARGET FRAMERATE</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">DITHERING</p>
+            </div>
+            <div class="slidershake">
+                <input id="myRange" type="range" min="0" max="50" value="1" class="slider">
+                <p class="percent-value"><span id="demo">1</span>0%</p>
+            </div>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">TEXTURE WARPING</p>
+            </div>
+            <div class="slidershake">
+                <input id="myRange" type="range" min="0" max="200" value="0" class="slider">
+                <p class="percent-value"><span id="demo">0</span>%</p>
+            </div>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">VERTEX WARPING</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">CUSTOM COLOR<br>PALLET</p>
+            </div>
+            <div class="x-button-box">
+                <button class="x-button vcr-osd-mono-regular" onclick="">x</button>
+            </div>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">COLOR COMPRESSION</p>
+            </div>
+            <button class="options-buttons vcr-osd-mono-regular" onclick="">[[PLACEHOLDER]]</button>
+        </div>
+
+        <div class="mini-tiptitle">
+            <p class="mini-title">-- PERFORMANCE --</p>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">SIMPLER EXPLOSIONS</p>
+            </div>
+            <div class="x-button-box">
+                <button class="x-button vcr-osd-mono-regular" onclick="">x</button>
+            </div>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">SIMPLER FIRE</p>
+            </div>
+            <div class="x-button-box">
+                <button class="x-button vcr-osd-mono-regular" onclick="">x</button>
+            </div>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">SIMPLER SPAWN EFFECTS</p>
+            </div>
+            <div class="x-button-box">
+                <button class="x-button vcr-osd-mono-regular" onclick="">x</button>
+            </div>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">DISABLE ENVIRONMENTAL PARTICLE EFFECTS</p>
+            </div>
+            <div class="x-button-box">
+                <button class="x-button vcr-osd-mono-regular" onclick="">x</button>
+            </div>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">SIMPLE NAIL PHYSICS</p>
+            </div>
+            <div class="x-button-box">
+                <button class="x-button vcr-osd-mono-regular" onclick="">x</button>
+            </div>
+        </div>
+
+        <div class="mini-tiptitle">
+            <p class="mini-title-psx">-- GORE --</p>
+            <p class="mini-title-desc">(Does not affect gameplay)</p>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">ENABLE BLOOD & GORE</p>
+            </div>
+            <div class="x-button-box">
+                <button class="x-button vcr-osd-mono-regular" onclick="">x</button>
+            </div>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">FREEZE GORE PHYSICS</p>
+            </div>
+            <div class="x-button-box">
+                <button class="x-button vcr-osd-mono-regular" onclick="">x</button>
+            </div>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">MAX BLOODSTAINS</p>
+            </div>
+            <div class="slidershake">
+                <input id="myRange" type="range" min="10" max="500" value="100" class="slider">
+                <p class="percent-value"><span id="demo">100</span>K</p>
+            </div>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">BLOODSTAIN CHANCE</p>
+            </div>
+            <div class="slidershake">
+                <input id="myRange" type="range" min="0" max="100" value="50" class="slider">
+                <p class="percent-value"><span id="demo">50</span>%</p>
+            </div>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">FIELD OF VIEW</p>
+            </div>
+            <div class="slidershake">
+                <input id="myRange" type="range" min="0" max="100" value="30" class="slider">
+                <p class="percent-value"><span id="demo">30</span>00</p>
+            </div>
+        </div>
+    </div>
+    <button class="exit vcr-osd-mono-regular" onclick="optionsmenu()">BACK</button>
+</div>`
+}
+function GODDAMNTHEAUDIO(){
+    let rightBox = document.getElementById("right-box");
+    rightBox.innerHTML = `<div class="tipbox">
+    <div class="tiptitle">
+        <p class="title">--AUDIO--</p>
+    </div>
+    <div class="overflow-buttons">
+        <div class="mini-tiptitle">
+            <p class="mini-title">-- VOLUME --</p>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">MASTER</p>
+            </div>
+            <div class="slidershake">
+                <input id="myRange" type="range" min="0" max="100" value="100" class="slider">
+                <p class="percent-value"><span id="demo">100</span></p>
+            </div>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">SOUND EFFECTS</p>
+            </div>
+            <div class="slidershake">
+                <input id="myRange" type="range" min="0" max="100" value="100" class="slider">
+                <p class="percent-value"><span id="demo">100</span></p>
+            </div>
+        </div>
+        <div id="toggle-weapon-variation" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">MUSIC</p>
+            </div>
+            <div class="slidershake">
+                <input id="myRange" type="range" min="0" max="100" value="60" class="slider">
+                <p class="percent-value"><span id="demo">100</span></p>
+            </div>
+        </div>
+
+        <div class="mini-tiptitle">
+            <p class="mini-title">-- MISC --</p>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">SUBTITLES</p>
+            </div>
+            <div class="x-button-box">
+                <button class="x-button vcr-osd-mono-regular" onclick="">x</button>
+            </div>
+        </div>
+        <div id="toggle-weapon-position" class="general-options-button">
+            <div class="options-text-box">
+                <p class="options-desc-text">MUFFLE MUSIC WHILE UNDERWATER</p>
+            </div>
+            <div class="x-button-box">
+                <button class="x-button vcr-osd-mono-regular" onclick="">x</button>
+            </div>
+        </div>
+    </div>
+    <button class="exit vcr-osd-mono-regular" onclick="optionsmenu()">BACK</button>
+</div>`
+}
+/*Youtube Tutorial: failed
+
+let sliderSS = document.getElementById("range")
+let valueSS = document.querySelector('.percent-value');
+
+valueSS.innerHTML = sliderSS.value;
+function calcValue(){
+    let valuePercentage = (sliderSS.value / sliderSS.max) * 100;
+    sliderSS.style.background = `linear-gradient(to right, #fff ${valuePercentage}%, #000 ${valuePercentage}%)`;
+}
+
+sliderSS.addEventListener('input', function percentValue(){
+    valueSS.textContent = this.value;
+})
+percentValue()
+calcValue()*/
+/*W3Schools: fail
+
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}*/
